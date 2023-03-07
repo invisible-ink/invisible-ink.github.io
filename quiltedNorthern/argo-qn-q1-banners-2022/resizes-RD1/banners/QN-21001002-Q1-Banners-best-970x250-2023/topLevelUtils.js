@@ -1,0 +1,1 @@
+window.VER=function(n,w,i){return window.CONFIG.selectValue(n,w,i)},window.MATCH=function(n){return window.CONFIG.match(n)};
