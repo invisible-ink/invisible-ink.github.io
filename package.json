@@ -1,13 +1,16 @@
 {
-  "name": "invisible-ink.github.io",
-  "version": "0.0.1",
-  "type": "module",
-  "main": "index.js",
-  "author": "Mike Kellogg <mike@invisible.ink>",
-  "dependencies": {
-    "esbuild": "^0.17.11",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "yaml": "^2.2.1"
-  }
+    "name": "invisible-ink.github.io",
+    "version": "0.0.1",
+    "type": "module",
+    "main": "index.js",
+    "author": "Mike Kellogg <mike@invisible.ink>",
+    "scripts": {
+        "dev": "node esbuild.dev.js"
+    },
+    "dependencies": {
+        "esbuild": "^0.17.11",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "yaml": "^2.2.1"
+    }
 }

@@ -23517,7 +23517,7 @@
     const type = Array.isArray(group) ? "list" : "group";
     if (type === "list") {
       return group.map((content, index) => {
-        const [, width, height] = content.match(/(\d+)x(\d+)$/);
+        const [, width, height] = content.match(/(\d+)x(\d+)/);
         const size = `${width}x${height}`;
         const displayTitle = [...parentNames, size].join(" - ");
         const label = size;

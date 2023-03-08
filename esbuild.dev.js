@@ -10,4 +10,4 @@ let { host, port } = await ctx.serve({
     servedir: './',
 })
 
-console.log(`serving at http://${host}:${port}`)
+console.log(`serving at http://localhost:${port}`)
