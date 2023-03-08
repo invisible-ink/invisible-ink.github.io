@@ -1,0 +1,1 @@
+!function(n){"function"==typeof define&&define.amd?define(n):n()}(function(){"use strict";function n(n){n.preventDefault();try{window.CONFIG.match("Xandr")?window.open(window.APPNEXUS.getClickTag(),"_blank"):window.open(window.clickTag)}catch(n){}}for(var e=document.querySelectorAll(".clickthrough"),t=0;t<e.length;t++)e[t].addEventListener("click",n)});
