@@ -1,0 +1,1301 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img {
+  border: none !important;
+}
+
+img {
+  height: auto;
+}
+
+body {
+  margin: 0;
+}
+
+#banner {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  cursor: pointer;
+}
+#banner #banner-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#banner:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border: 1px solid #000000;
+}
+
+.init #banner #banner-inner {
+  left: 1000px;
+  top: 1000px;
+}
+
+#super-cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  pointer-events: none;
+}
+
+.banner-sized {
+  width: 300px;
+  height: 250px;
+}
+
+.frame {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  transform-origin: 0 0;
+}
+
+#catch-all {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  -webkit-text-size-adjust: none;
+}
+
+svg rect[id^=border] {
+  visibility: hidden;
+}
+
+#HACK-move-up-competitor {
+  transform: translate(0, -100px);
+}
+
+.layer,
+.layer div,
+.layer svg,
+.layer img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.layer:first-child,
+.layer div:first-child,
+.layer svg:first-child,
+.layer img:first-child {
+  position: relative;
+}
+
+.headline {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.headline .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.show-debug .headline .line {
+  outline: 1px solid red;
+}
+
+.flare-filter {
+  filter: drop-shadow(0 0 2px white) drop-shadow(0 0 5px white);
+}
+
+.flare-filter-1 {
+  filter: drop-shadow(0 0 0.5px #fff) drop-shadow(0 0 1px #fff);
+}
+
+.flare-filter-2 {
+  filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 2px #fff);
+}
+
+.flare-filter-3 {
+  filter: drop-shadow(0 0 1.5px #fff) drop-shadow(0 0 3px #fff);
+}
+
+.flare-filter-4 {
+  filter: drop-shadow(0 0 2px #fff) drop-shadow(0 0 4px #fff);
+}
+
+.flare-filter-5 {
+  filter: drop-shadow(0 0 2.5px #fff) drop-shadow(0 0 5px #fff);
+}
+
+.flare-filter-6 {
+  filter: drop-shadow(0 0 3px #fff) drop-shadow(0 0 6px #fff);
+}
+
+.flare-filter-7, .concept-10GLaunch #frame4 #logo-10G .flare-filter {
+  filter: drop-shadow(0 0 3.5px #fff) drop-shadow(0 0 7px #fff);
+}
+
+.flare-filter-8 {
+  filter: drop-shadow(0 0 4px #fff) drop-shadow(0 0 8px #fff);
+}
+
+.flare-filter-9 {
+  filter: drop-shadow(0 0 4.5px #fff) drop-shadow(0 0 9px #fff);
+}
+
+.flare-filter-10 {
+  filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #fff);
+}
+
+#main-stage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fade-in,
+.flare-in {
+  -webkit-mask-image: linear-gradient(110deg, red 35%, rgba(255, 0, 0, 0) 65%);
+  mask-image: linear-gradient(110deg, red 35%, rgba(255, 0, 0, 0) 65%);
+  -webkit-mask-size: 1200px 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: 1200px 100%;
+  mask-repeat: no-repeat;
+}
+
+.flare-in {
+  -webkit-mask-image: linear-gradient(110deg, rgba(255, 0, 0, 0) 30%, red 45%, red 45%, rgba(255, 0, 0, 0) 60%);
+  mask-image: linear-gradient(110deg, rgba(255, 0, 0, 0) 30%, red 45%, red 45%, rgba(255, 0, 0, 0) 60%);
+  -webkit-mask-size: 900px 100%;
+  mask-size: 900px 100%;
+}
+
+.concept-10GLaunch .powerful-effect .shake-me {
+  opacity: 0.5;
+}
+.concept-10GLaunch .fast-loop {
+  opacity: 0.6;
+}
+.concept-10GLaunch .blur {
+  width: 300px;
+  height: 50px;
+}
+.concept-10GLaunch #frame4 #x-logo .layer {
+  display: flex;
+  justify-content: center;
+}
+.concept-10GLaunch #frame4 #logo-10G {
+  width: 300px;
+}
+.concept-10GLaunch #frame4 #cta-headline #cta {
+  display: flex;
+}
+.concept-10GLaunch #frame4 #chevron {
+  position: absolute;
+  width: 450px;
+  height: 250px;
+}
+.concept-10GLaunch #frame4 #chevron > .mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-mask-image: url(images/chevron-mask.png);
+  -webkit-mask-size: 100% 100%;
+  mask-image: url(images/chevron-mask.png);
+  mask-size: 100% 100%;
+}
+.concept-10GLaunch #frame4 #chevron > .mask .main {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.concept-10GLaunch #frame4 #chevron > .mask .main > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+.concept-10GLaunch #frame4 #chevron > .mask .main > div img {
+  width: 235px;
+}
+.concept-10GLaunch #frame4 #chevron > .mask .main .right {
+  left: 215px;
+}
+.concept-10GLaunch #frame4 #chevron > .mask .main .right img {
+  position: relative;
+  left: 0;
+  transform: scaleX(-1);
+}
+
+.concept-Internet #frame1 #line2 .fast-loop {
+  opacity: 0.5;
+}
+.concept-Internet #frame1 #line2 .blur {
+  width: 300px;
+  height: 60px;
+}
+.concept-Internet #frame5 #cta-headline #cta {
+  display: flex;
+  padding: 20px 12px;
+}
+.concept-Internet #frame5 #cta-headline #cta svg {
+  height: 32px;
+  width: 101px;
+}
+.concept-Internet #arc {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  -webkit-mask-image: linear-gradient(110deg, red 45%, rgba(255, 0, 0, 0) 55%);
+  mask-image: linear-gradient(110deg, red 45%, rgba(255, 0, 0, 0) 55%);
+}
+.concept-Internet #arc > .mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-mask-image: url(images/arc-mask.png);
+  -webkit-mask-size: 100% 100%;
+  mask-image: url(images/arc-mask.png);
+  mask-size: 100% 100%;
+}
+.concept-Internet #arc > .mask .main {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.concept-Internet #arc > .mask .main img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.concept-Internet #modem-XB8 {
+  position: absolute;
+  width: 116px;
+  height: 224px;
+  perspective-origin: 50% -130%;
+}
+.concept-Internet #modem-XB8 .inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+.concept-Internet #modem-XB8 img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform-origin: 0 0;
+}
+.concept-Internet #modem-XB8 .mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-mask: linear-gradient(90deg, rgba(255, 0, 0, 0) 14%, red 17%);
+  mask: linear-gradient(90deg, rgba(255, 0, 0, 0) 14%, red 17%);
+}
+
+.concept-XMDedicated #frame1 #line2 .fast-loop {
+  opacity: 0.5;
+}
+.concept-XMDedicated #frame1 #line2 .blur {
+  width: 300px;
+  height: 60px;
+}
+.concept-XMDedicated #frame1 #frame1-legal {
+  position: absolute;
+}
+.concept-XMDedicated #frame2 #mobile-map {
+  position: absolute;
+  -webkit-mask: radial-gradient(closest-side, red 25%, rgba(255, 0, 0, 0));
+  mask: radial-gradient(closest-side, red 25%, rgba(255, 0, 0, 0));
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 25% 100%;
+  -webkit-mask-position: 50% 50%;
+  mask-repeat: no-repeat;
+  mask-size: 25% 100%;
+  mask-position: 50% 50%;
+}
+.concept-XMDedicated #frame2 #mobile-map img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.concept-XMDedicated #frame3 #frame3-legal {
+  position: absolute;
+}
+.concept-XMDedicated #frame4 #frame4-legal {
+  position: absolute;
+}
+.concept-XMDedicated #phones {
+  position: absolute;
+  perspective: 500px;
+  perspective-origin: 80px 90px;
+}
+.concept-XMDedicated #phones .phone {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 160px;
+  height: 240px;
+}
+.concept-XMDedicated #phones .phone img,
+.concept-XMDedicated #phones .phone svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.concept-XMDedicated #phones .phone.back {
+  left: 52px;
+  top: 0;
+  width: 154px;
+  height: 232px;
+}
+.concept-XMDedicated #arc {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  -webkit-mask-image: linear-gradient(110deg, red 45%, rgba(255, 0, 0, 0) 55%);
+  mask-image: linear-gradient(110deg, red 45%, rgba(255, 0, 0, 0) 55%);
+}
+.concept-XMDedicated #arc > .mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-mask-image: url(images/arc-mask.png);
+  -webkit-mask-size: 100% 100%;
+  mask-image: url(images/arc-mask.png);
+  mask-size: 100% 100%;
+}
+.concept-XMDedicated #arc > .mask .main {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.concept-XMDedicated #arc > .mask .main img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.concept-XMDedicated #mobile-map #twinkle {
+  position: absolute;
+}
+.concept-XMDedicated #mobile-map #twinkle canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.concept-XMDedicated #xfinity-logo {
+  position: absolute;
+}
+
+.concept-customer #frame1 {
+  display: none;
+}
+.concept-customer #frame1 #line2 .fast-loop {
+  opacity: 0.5;
+}
+.concept-customer #frame1 #line2 .blur {
+  width: 300px;
+  height: 60px;
+}
+.concept-customer #frame1 #frame1-legal {
+  position: absolute;
+}
+.concept-customer #frame3 #frame3-legal {
+  position: absolute;
+}
+.concept-customer #frame4 #frame4-legal {
+  position: absolute;
+}
+.concept-customer #phones {
+  position: absolute;
+  perspective: 500px;
+  perspective-origin: 55px 75px;
+}
+.concept-customer #phones .phone {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 160px;
+  height: 240px;
+}
+.concept-customer #phones .phone img,
+.concept-customer #phones .phone svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.concept-customer #phones .phone svg.phone-x-logo {
+  left: 28.75px;
+  top: 45.5px;
+  width: 61.25px;
+  height: 65px;
+}
+.concept-customer #arc {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  -webkit-mask-image: linear-gradient(110deg, red 45%, rgba(255, 0, 0, 0) 55%);
+  mask-image: linear-gradient(110deg, red 45%, rgba(255, 0, 0, 0) 55%);
+}
+.concept-customer #arc > .mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-mask-image: url(images/arc-mask.png);
+  -webkit-mask-size: 100% 100%;
+  mask-image: url(images/arc-mask.png);
+  mask-size: 100% 100%;
+}
+.concept-customer #arc > .mask .main {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.concept-customer #arc > .mask .main img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.concept-customer #mobile-map #twinkle {
+  position: absolute;
+}
+.concept-customer #mobile-map #twinkle canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.concept-customer #xfinity-logo {
+  position: absolute;
+}
+
+.concept-noOffer #frame1 {
+  display: none;
+}
+.concept-noOffer #frame1 #line2 .fast-loop {
+  opacity: 0.5;
+}
+.concept-noOffer #frame1 #line2 .blur {
+  width: 300px;
+  height: 60px;
+}
+.concept-noOffer #frame5 #cta-headline #cta {
+  display: flex;
+  padding: 20px 12px;
+}
+.concept-noOffer #frame5 #cta-headline #cta svg {
+  height: 32px;
+  width: 101px;
+}
+.concept-noOffer #arc {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  -webkit-mask-image: linear-gradient(110deg, red 45%, rgba(255, 0, 0, 0) 55%);
+  mask-image: linear-gradient(110deg, red 45%, rgba(255, 0, 0, 0) 55%);
+}
+.concept-noOffer #arc > .mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-mask-image: url(images/arc-mask.png);
+  -webkit-mask-size: 100% 100%;
+  mask-image: url(images/arc-mask.png);
+  mask-size: 100% 100%;
+}
+.concept-noOffer #arc > .mask .main {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.concept-noOffer #arc > .mask .main img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.concept-noOffer #modem-XB8 {
+  position: absolute;
+  width: 116px;
+  height: 224px;
+  perspective-origin: 50% -130%;
+}
+.concept-noOffer #modem-XB8 .inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+.concept-noOffer #modem-XB8 img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform-origin: 0 0;
+}
+.concept-noOffer #modem-XB8 .mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-mask: linear-gradient(90deg, rgba(255, 0, 0, 0) 14%, red 17%);
+  mask: linear-gradient(90deg, rgba(255, 0, 0, 0) 14%, red 17%);
+}
+.concept-noOffer #tablet {
+  position: absolute;
+  left: 140px;
+  top: 118px;
+  width: 139px;
+  height: 139px;
+  perspective: 500px;
+  perspective-origin: 80px 90px;
+}
+.concept-noOffer #tablet > .inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.concept-noOffer #tablet img,
+.concept-noOffer #tablet svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.concept-offer #frame1 {
+  display: none;
+}
+.concept-offer #frame1 #line2 .fast-loop {
+  opacity: 0.5;
+}
+.concept-offer #frame1 #line2 .blur {
+  width: 300px;
+  height: 60px;
+}
+.concept-offer #frame5 #cta-headline #cta {
+  display: flex;
+  padding: 20px 12px;
+}
+.concept-offer #frame5 #cta-headline #cta svg {
+  height: 32px;
+  width: 101px;
+}
+.concept-offer #arc {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  -webkit-mask-image: linear-gradient(110deg, red 45%, rgba(255, 0, 0, 0) 55%);
+  mask-image: linear-gradient(110deg, red 45%, rgba(255, 0, 0, 0) 55%);
+}
+.concept-offer #arc > .mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-mask-image: url(images/arc-mask.png);
+  -webkit-mask-size: 100% 100%;
+  mask-image: url(images/arc-mask.png);
+  mask-size: 100% 100%;
+}
+.concept-offer #arc > .mask .main {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.concept-offer #arc > .mask .main img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.concept-offer #modem-XB8 {
+  position: absolute;
+  width: 116px;
+  height: 224px;
+  perspective-origin: 50% -130%;
+}
+.concept-offer #modem-XB8 .inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+.concept-offer #modem-XB8 img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform-origin: 0 0;
+}
+.concept-offer #modem-XB8 .mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-mask: linear-gradient(90deg, rgba(255, 0, 0, 0) 14%, red 17%);
+  mask: linear-gradient(90deg, rgba(255, 0, 0, 0) 14%, red 17%);
+}
+.concept-offer #tablet {
+  position: absolute;
+  left: 166px;
+  top: 107px;
+  width: 139px;
+  height: 139px;
+  perspective: 500px;
+  perspective-origin: 80px 90px;
+}
+.concept-offer #tablet > .inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.concept-offer #tablet img,
+.concept-offer #tablet svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#xfinity-logo {
+  position: absolute;
+}
+
+img {
+  height: auto;
+}
+
+.logo {
+  display: block;
+  position: absolute;
+}
+
+#endframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#endframe-inline-legal {
+  position: absolute;
+}
+
+#cta-mover {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+#cta-headline {
+  z-index: 1000;
+  pointer-events: all !important;
+}
+#cta-headline .inner {
+  pointer-events: all !important;
+}
+
+#cta {
+  margin-top: -20px;
+  padding: 20px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#cta svg,
+#cta img {
+  vertical-align: middle;
+}
+#cta .inner {
+  border-radius: 5px;
+  box-shadow: 0 0 0 #c925ff, 0 0 0 #c925ff;
+  transition: transform 0.5s cubic-bezier(0.3, 2.5, 0.3, 1), box-shadow 0.5s cubic-bezier(0.3, 2.5, 0.3, 1);
+}
+#cta .inner:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 8px #c925ff, 0 0 12px #c925ff;
+}
+
+#legal-click {
+  position: absolute;
+}
+.show-debug #legal-click {
+  outline: 1px solid red;
+}
+
+#legal {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+}
+#legal > .inner {
+  position: absolute;
+  padding: 6px 7px;
+  background: #fff;
+  color: #60a630;
+  font-family: sans-serif;
+  font-size: 6px;
+  line-height: 1.4em;
+  border-radius: 4px;
+}
+#legal > .inner .sup {
+  top: -4px;
+}
+#legal > .inner .arrow {
+  position: absolute;
+  border: 4px solid transparent;
+  height: 0;
+  width: 0;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+}
+
+#banner {
+  background: #6426bd;
+  background-image: url(images/background.jpg);
+  background-size: 100% 100%;
+}
+
+#banner:after {
+  border-color: #666;
+}
+
+#super-cover {
+  background: #fff;
+}
+
+.headline > * {
+  pointer-events: none;
+}
+
+.blender {
+  mix-blend-mode: color-dodge;
+}
+
+.blender.red {
+  transform: translate(0, 0);
+}
+.blender.red * {
+  fill: #ff0080 !important;
+}
+
+.blender.green * {
+  fill: #00ff80 !important;
+}
+
+.blender.blue * {
+  fill: #0000ff !important;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+[id$=-hidden] {
+  display: none;
+  visibility: hidden;
+}
+
+#banner,
+.frame {
+  width: 160px;
+  height: 600px;
+}
+#banner #banner-inner,
+.frame #banner-inner {
+  width: 160px;
+  height: 600px;
+}
+
+.concept-Internet #frame1 #line1 {
+  top: 201px;
+}
+.concept-Internet #frame1 #line2 {
+  top: 235px;
+}
+.concept-Internet #frame1 #line3 {
+  top: 265px;
+}
+.concept-Internet #frame1 #line4 {
+  top: 297px;
+}
+.concept-Internet #frame2 #line1 {
+  top: 196px;
+}
+.concept-Internet #frame2 #line2 {
+  top: 228px;
+}
+.concept-Internet #frame2 #line3 {
+  top: 260px;
+}
+.concept-Internet #frame2 #line4 {
+  top: 291px;
+}
+.concept-Internet #frame2 #line5 {
+  top: 322px;
+}
+.concept-Internet #frame3 #line1 {
+  top: 201px;
+}
+.concept-Internet #frame3 #line2 {
+  top: 232px;
+}
+.concept-Internet #frame3 #line3 {
+  top: 264px;
+}
+.concept-Internet #frame3 #line4 {
+  top: 295px;
+}
+.concept-Internet #frame3 #line5 {
+  top: 326px;
+}
+.concept-Internet #frame4 #line1 {
+  top: 143px;
+}
+.concept-Internet #frame4 #line2 {
+  top: 174px;
+}
+.concept-Internet #frame4 #line3 {
+  top: 204px;
+}
+.concept-Internet #frame4 #line4 {
+  top: 235px;
+}
+.concept-Internet #cta-headline {
+  top: 459px;
+  transform: scale(1.07);
+  transform-origin: 50% 0;
+}
+.concept-Internet #cta-headline #cta {
+  justify-content: center;
+}
+.concept-Internet #arc {
+  left: -94px;
+  top: 223px;
+  transform: scale(0.6);
+}
+.concept-Internet #modem-XB8 {
+  left: 22px;
+  top: 273px;
+  transform: scale(0.88);
+}
+.concept-Internet #xfinity-logo {
+  left: 48px;
+  bottom: 76px;
+  width: 67px;
+}
+
+.concept-noOffer #frame1 #line1 {
+  top: 201px;
+}
+.concept-noOffer #frame1 #line2 {
+  top: 235px;
+}
+.concept-noOffer #frame1 #line3 {
+  top: 265px;
+}
+.concept-noOffer #frame1 #line4 {
+  top: 297px;
+}
+.concept-noOffer #frame2 #line1 {
+  top: 224px;
+}
+.concept-noOffer #frame2 #line2 {
+  top: 254px;
+}
+.concept-noOffer #frame3 #line1 {
+  top: 201px;
+}
+.concept-noOffer #frame3 #line2 {
+  top: 232px;
+}
+.concept-noOffer #frame3 #line3 {
+  top: 264px;
+}
+.concept-noOffer #frame3 #line4 {
+  top: 295px;
+}
+.concept-noOffer #frame3 #line5 {
+  top: 326px;
+}
+.concept-noOffer #frame4 #line1 {
+  top: 49px;
+}
+.concept-noOffer #frame4 #line2 {
+  top: 74px;
+}
+.concept-noOffer #frame4 #line3 {
+  top: 100px;
+}
+.concept-noOffer #frame4 #line4 {
+  top: 129px;
+}
+.concept-noOffer #frame4 #endframe-inline-legal img {
+  position: absolute;
+  width: 160px;
+  top: 449px;
+}
+.concept-noOffer #cta-headline {
+  top: 191px;
+  transform: scale(1.37);
+  transform-origin: 50% 0;
+}
+.concept-noOffer #cta-headline #cta {
+  justify-content: center;
+}
+.concept-noOffer #arc {
+  left: -105px;
+  top: 250px;
+  transform: scaleX(0.65) scaleY(0.55) rotate(4.5deg);
+}
+.concept-noOffer #modem-XB8 {
+  left: 4px;
+  top: 299px;
+  transform: scale(0.93);
+}
+.concept-noOffer #tablet {
+  left: 30px;
+  top: 363px;
+}
+.concept-noOffer #xfinity-logo {
+  left: 32px;
+  bottom: 28px;
+  width: 96px;
+}
+
+.concept-offer #frame1 #line1 {
+  top: 201px;
+}
+.concept-offer #frame1 #line2 {
+  top: 235px;
+}
+.concept-offer #frame1 #line3 {
+  top: 265px;
+}
+.concept-offer #frame1 #line4 {
+  top: 297px;
+}
+.concept-offer #frame2 #line1 {
+  top: 224px;
+}
+.concept-offer #frame2 #line2 {
+  top: 254px;
+}
+.concept-offer #frame2 #line3 {
+  top: 260px;
+}
+.concept-offer #frame2 #line4 {
+  top: 291px;
+}
+.concept-offer #frame2 #line5 {
+  top: 322px;
+}
+.concept-offer #frame3 #line1 {
+  top: 201px;
+}
+.concept-offer #frame3 #line2 {
+  top: 232px;
+}
+.concept-offer #frame3 #line3 {
+  top: 264px;
+}
+.concept-offer #frame3 #line4 {
+  top: 295px;
+}
+.concept-offer #frame3 #line5 {
+  top: 326px;
+}
+.concept-offer #frame4 #line1 {
+  top: 18px;
+}
+.concept-offer #frame4 #line2 {
+  top: 44px;
+}
+.concept-offer #frame4 #line3 {
+  top: 69px;
+}
+.concept-offer #frame4 #line4 {
+  top: 128px;
+}
+.concept-offer #frame4 #line5 {
+  top: 159px;
+}
+.concept-offer #frame4 #line6 {
+  top: 159px;
+}
+.concept-offer #frame4 #endframe-inline-legal img {
+  position: absolute;
+  width: 160px;
+  top: 182px;
+}
+.concept-offer #cta-headline {
+  top: 255px;
+  transform: scale(1.375);
+  transform-origin: 50% 0;
+}
+.concept-offer #cta-headline #cta {
+  justify-content: center;
+}
+.concept-offer #arc {
+  left: -116px;
+  top: 282px;
+  transform: scaleX(0.65) scaleY(0.5) rotate(-2.5deg);
+}
+.concept-offer #modem-XB8 {
+  left: 3px;
+  top: 327px;
+  transform: scale(0.92);
+}
+.concept-offer #tablet {
+  left: 30px;
+  top: 392px;
+}
+.concept-offer #xfinity-logo {
+  left: 32px;
+  bottom: 35px;
+  width: 96px;
+}
+
+.concept-XMDedicated #banner #banner-inner .frame [id$=-legal] {
+  width: 160px;
+}
+.concept-XMDedicated #banner #banner-inner .frame [id$=-legal] img {
+  width: 100%;
+}
+.concept-XMDedicated #frame1 #line1 {
+  top: 188px;
+}
+.concept-XMDedicated #frame1 #line2 {
+  top: 211px;
+}
+.concept-XMDedicated #frame2 #line1 {
+  top: 188px;
+}
+.concept-XMDedicated #frame2 #line2 {
+  top: 222px;
+}
+.concept-XMDedicated #frame2 #line3 {
+  top: 254px;
+}
+.concept-XMDedicated #frame3 #line1 {
+  top: 186px;
+}
+.concept-XMDedicated #frame3 #line2 {
+  top: 221px;
+}
+.concept-XMDedicated #frame3 #line3 {
+  top: 254px;
+}
+.concept-XMDedicated #frame4 #line1 {
+  top: 25px;
+}
+.concept-XMDedicated #frame4 #line2 {
+  top: 58px;
+}
+.concept-XMDedicated #frame4 #line3 {
+  top: 90px;
+}
+.concept-XMDedicated #frame4 #line4 {
+  top: 117px;
+}
+.concept-XMDedicated #frame4 #line5 {
+  top: 180px;
+}
+.concept-XMDedicated #frame4 #line6 {
+  top: 213px;
+}
+.concept-XMDedicated #frame4 #frame4-legal {
+  top: initial;
+  bottom: 0;
+}
+.concept-XMDedicated #frame4 #cta-headline {
+  top: 299px;
+  transform: scale(0.88);
+}
+.concept-XMDedicated #frame4 #cta-headline #cta {
+  justify-content: center;
+}
+.concept-XMDedicated #phones {
+  left: 17px;
+  top: 363px;
+  transform: scale(0.75);
+}
+.concept-XMDedicated #arc {
+  left: -94px;
+  top: 296px;
+  transform: scale(0.6);
+}
+.concept-XMDedicated #xfinity-logo {
+  position: absolute;
+  left: 29px;
+  bottom: 77px;
+  width: 103px;
+}
+
+.concept-customer #banner #banner-inner .frame [id$=-legal] {
+  width: 160px;
+}
+.concept-customer #banner #banner-inner .frame [id$=-legal] img {
+  width: 100%;
+}
+.concept-customer #frame1 #line1 {
+  top: 188px;
+}
+.concept-customer #frame1 #line2 {
+  top: 211px;
+}
+.concept-customer #frame2 #line1 {
+  top: 224px;
+}
+.concept-customer #frame2 #line2 {
+  top: 253px;
+}
+.concept-customer #frame3 #line1 {
+  top: 190px;
+}
+.concept-customer #frame3 #line2 {
+  top: 220px;
+}
+.concept-customer #frame3 #line3 {
+  top: 245px;
+}
+.concept-customer #frame3 #line4 {
+  top: 271px;
+}
+.concept-customer #frame3 #line5 {
+  top: 297px;
+}
+.concept-customer #frame4 #line1 {
+  top: 49px;
+}
+.concept-customer #frame4 #line2 {
+  top: 74px;
+}
+.concept-customer #frame4 #line3 {
+  top: 100px;
+}
+.concept-customer #frame4 #line4 {
+  top: 129px;
+}
+.concept-customer #frame4 #endframe-inline-legal img {
+  position: absolute;
+  width: 160px;
+  top: 449px;
+}
+.concept-customer #frame4 #cta-headline {
+  top: 199px;
+  transform: scale(1.375);
+}
+.concept-customer #frame4 #cta-headline #cta {
+  justify-content: center;
+}
+.concept-customer #phones {
+  left: 0px;
+  top: 296px;
+  transform: scale(1.3);
+}
+.concept-customer #arc {
+  left: -105px;
+  top: 276px;
+  transform: scaleX(0.65) scaleY(0.55) rotate(4.5deg);
+}
+.concept-customer #xfinity-logo {
+  position: absolute;
+  left: 32px;
+  bottom: 28px;
+  width: 96px;
+}
