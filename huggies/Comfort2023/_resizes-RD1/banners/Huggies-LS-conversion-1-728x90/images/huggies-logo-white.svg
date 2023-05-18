@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="200" height="200" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="linear-gradient" x1="140.3" y1="74.93" x2="135.07" y2="62.3" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".14" stop-color="#fff" stop-opacity=".22"/>
+      <stop offset=".34" stop-color="#fff" stop-opacity=".5"/>
+      <stop offset=".51" stop-color="#fff" stop-opacity=".71"/>
+      <stop offset=".66" stop-color="#fff" stop-opacity=".87"/>
+      <stop offset=".78" stop-color="#fff" stop-opacity=".96"/>
+      <stop offset=".85" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="63.28" y1="119.8" x2="64.73" y2="136.41" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".14" stop-color="#fff" stop-opacity=".22"/>
+      <stop offset=".32" stop-color="#fff" stop-opacity=".5"/>
+      <stop offset=".48" stop-color="#fff" stop-opacity=".71"/>
+      <stop offset=".62" stop-color="#fff" stop-opacity=".87"/>
+      <stop offset=".73" stop-color="#fff" stop-opacity=".96"/>
+      <stop offset=".8" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="huggies-logo">
+    <path id="Top_Right_of_H" data-name="Top Right of H" d="m150.17,27.62h-28.34c-5.34,0-9.66,4.33-9.66,9.66v37.08l47.66-19.81v-17.28c0-5.34-4.33-9.66-9.66-9.66Z" fill="#fff"/>
+    <path id="Top_Left_of_H" data-name="Top Left of H" d="m40.63,92.32c11.22,2.8,26.42,4.97,40.02,5.58,2.46.12,5,.21,7.64.27,7.28.15,15.26,0,23.88-.55,2.5-.16,5.05-.36,7.65-.59,12.21-1.1,26.18-3.15,40.61-6.25h.06c13.32-1.54,13.17-22.34-.66-23.02.09-.02-2.62-.22-5.83,1.01,0,0,0,0,0,0h0c-1.02.31-2.05.56-3.09.75-11.04,2.03-21.42,3.4-31.09,4.25-2.6.23-5.16.43-7.65.59-6.5.41-12.65.59-18.42.59-1.86,0-3.67-.02-5.45-.06v-37.61c0-5.34-4.33-9.66-9.66-9.66h0s-28.34,0-28.34,0c-5.34,0-9.66,4.33-9.66,9.66v55.04Z" fill="#fff"/>
+    <path id="Botom_Right_of_H" data-name="Botom Right of H" d="m119.81,103.63c-2.6.23-5.16.43-7.65.59-8.54.53-15.92.69-23.88.53-2.63-.05-5.19-.13-7.64-.25-10.9-.53-21.02-1.69-30.74-3.47-1.87-.34-3.72-.81-5.56-1.3-.39-.1-.78-.19-1.17-.26-2.1-.4-4.28-.33-6.27.44-4.24,1.64-7.24,5.75-7.24,10.56,0,5.75,4.29,10.49,9.84,11.22.42.06.92.15,1.33.22s.74.09,1.15.18c12.63,2.65,46.3,5.94,46.3,5.94,7.28.15,15.26,0,23.88-.55v35.24c0,5.34,4.33,9.66,9.66,9.66h28.34c5.34,0,9.66-4.33,9.66-9.66v-65.09c-14.41,3.04-27.78,4.94-40.01,6.01Z" fill="#fff"/>
+    <path id="Botom_Left_of_H" data-name="Botom Left of H" d="m40.63,162.72c0,5.34,4.33,9.66,9.66,9.66h28.34c5.34,0,9.66-4.33,9.66-9.66v-33.36c0,1.75-46.66,8.5-47.66,8.65v24.72Z" fill="#fff"/>
+    <path id="Top_Gradient" data-name="Top Gradient" d="m159.83,67.76v-13.21l-47.66,19.12v.7s-.13.1.05.09c1.73-.1,11.59-.79,23.96-2.56,7.95-1.14,17.05-2.72,23.65-4.13Z" fill="url(#linear-gradient)"/>
+    <path id="Bottom_Gradient" data-name="Bottom Gradient" d="m40.63,122.18v16.34c1-.15,47.66-7.41,47.66-9.16v-1.33s-36.31-3.54-47.66-6.24v.4Z" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

@@ -1,0 +1,386 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img {
+  border: none !important;
+}
+
+img {
+  height: auto;
+}
+
+body {
+  margin: 0;
+}
+
+#banner {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  cursor: pointer;
+}
+#banner #banner-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#banner:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border: 1px solid #000000;
+}
+
+.init #banner #banner-inner {
+  left: 1000px;
+  top: 1000px;
+}
+
+#super-cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  pointer-events: none;
+}
+
+.banner-sized {
+  width: 300px;
+  height: 250px;
+}
+
+.frame {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  transform-origin: 0 0;
+}
+
+#catch-all {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  -webkit-text-size-adjust: none;
+}
+
+#product-box-spinner-wrapper {
+  position: absolute;
+  left: 120px;
+  top: 166px;
+  width: 0;
+  height: 0;
+  perspective: 1000px;
+}
+#product-box-spinner-wrapper .camera {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  transform-style: preserve-3d;
+  transform: translate3d(0, -20px, 0) rotateX(-18deg);
+}
+#product-box-spinner-wrapper .shad {
+  position: absolute;
+  left: -194px;
+  top: -80px;
+  width: 396px;
+  height: 93px;
+  transform: perspective(100000px) translate3d(0, 0, -100px);
+}
+#product-box-spinner-wrapper #product-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  transform-style: preserve-3d;
+  transform: translate3d(0, 20px, -50px) rotateY(0deg);
+  backface-visibility: hidden;
+}
+#product-box-spinner-wrapper #product-box .front {
+  position: absolute;
+  left: -81px;
+  top: -138px;
+  width: 163px;
+  height: 145px;
+  transform: translate3d(0, 0, 50px);
+  backface-visibility: hidden;
+}
+#product-box-spinner-wrapper #product-box .top {
+  position: absolute;
+  left: -81px;
+  top: -227px;
+  width: 163px;
+  height: 98px;
+  transform-origin: 50% 93%;
+  transform: translate3d(0, 0, 45px) rotateX(90deg);
+  backface-visibility: hidden;
+}
+#product-box-spinner-wrapper #product-box .side {
+  position: absolute;
+  left: -177px;
+  top: -136px;
+  width: 99px;
+  height: 137px;
+  transform-origin: 99% 50%;
+  transform: translate3d(0, 0, 50px) rotateY(-90deg);
+  backface-visibility: hidden;
+}
+
+#side-by-side {
+  position: absolute;
+  left: -24px;
+  top: -35px;
+  width: 491px;
+  height: 125px;
+  background: url(images/side-by-side.jpg);
+  background-size: 517px 125px;
+}
+
+.window {
+  position: absolute;
+  left: 110px;
+  top: 0;
+  width: 355px;
+  height: 76px;
+  overflow: hidden;
+}
+.window .frame-elements {
+  position: absolute;
+  left: -110px;
+  width: 728px;
+  height: 90px;
+}
+
+.baby-image {
+  position: absolute;
+  height: auto;
+}
+
+.frame .baby-image.baby-sophia {
+  left: -7px;
+  top: -31px;
+  width: 367px;
+}
+.frame .baby-image.baby-ezekiel {
+  left: -67px;
+  top: -129px;
+  width: 417px;
+  height: auto;
+  transform: rotate(32deg);
+}
+.frame .baby-image.baby-jay {
+  left: 0;
+  top: -50px;
+  width: 370px;
+}
+.frame .baby-image.baby-cutest {
+  left: -98px;
+  top: -64px;
+  width: 470px;
+}
+
+svg rect[id^=border] {
+  visibility: hidden;
+}
+
+.frame-elements {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.frame-elements img,
+.frame-elements svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.shadow {
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.4)) drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.4)) drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.4));
+}
+
+#cta-mover {
+  position: absolute;
+  left: 598px;
+  top: 30px;
+  width: 85px;
+  height: 30px;
+}
+#cta-mover #cta {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  transition: border-color 0.2s ease-out, background-color 0.2s ease-out;
+}
+#cta-mover #cta svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+#cta-mover #cta svg path {
+  transition: fill 0.2s ease-out;
+}
+#cta-mover #cta:hover {
+  border-color: #fff;
+  background-color: #fff;
+}
+#cta-mover #cta:hover svg path {
+  fill: #dc271f;
+}
+
+.BigGroup-LS #banner #banner-inner #cta-mover {
+  left: 616px;
+}
+
+#banner {
+  background: #dc271f;
+  background-size: 100% 100%;
+}
+
+#banner:after {
+  border-color: #666;
+}
+
+#super-cover {
+  background: #dc271f;
+}
+
+.headline > * {
+  pointer-events: none;
+}
+
+img,
+svg {
+  vertical-align: middle;
+  height: auto;
+}
+
+[id$=-hidden] {
+  display: none;
+  visibility: hidden;
+}
+
+.frame {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.frame .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html:not(.show-debug) svg [fill=blue],
+html:not(.show-debug) svg [fill="#00f"],
+html:not(.show-debug) svg [fill="#0000ff"] {
+  fill: #fff;
+}
+html:not(.show-debug) svg [stroke=blue],
+html:not(.show-debug) svg [stroke="#00f"],
+html:not(.show-debug) svg [stroke="#0000ff"] {
+  stroke: #fff;
+}
+
+#banner,
+.frame {
+  width: 728px;
+  height: 90px;
+}
+#banner #banner-inner,
+.frame #banner-inner {
+  width: 728px;
+  height: 90px;
+}
+
+.frame {
+  visibility: hidden;
+}
+
+#backing {
+  visibility: visible;
+}
+
+.circle-dots {
+  position: absolute;
+  width: 100px;
+  height: auto;
+}
+
+.circle-dots-left {
+  left: -86px;
+  top: -61px;
+  width: 117px;
+}
+
+.circle-dots-right {
+  right: -93px;
+  top: 20px;
+  width: 129px;
+}
+
+#side-by-side {
+  background-position: 25px 0;
+}
+
+#backing #logo {
+  position: absolute;
+  left: 27px;
+  top: 14px;
+  width: 58px;
+}
+#backing #product-box-spinner-wrapper {
+  position: absolute;
+  left: 573px;
+  top: 80px;
+  transform: scale(0.5);
+}
+
+#legal {
+  position: absolute;
+  right: 25px;
+  bottom: 4px;
+  width: 80px;
+}
+
+#wipes {
+  position: absolute;
+  left: 507px;
+  top: 40px;
+  width: 103px;
+}
